@@ -8,11 +8,39 @@
     <link rel="stylesheet" href="./css/style1.css">
 
     <!-- link slick -->
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
     
     <title>Document</title>
+    
 </head>
+<style> 
+.slider {
+    /* width: 50%; */
+    width: 1280px;
+    margin: 45px 100px 0 100px;
+}
+
+.slick-slide {
+  margin: 0px 30px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+  color:#bd945f;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  /* opacity: .2; */
+}
+  </style>
 <body>
     <!-- start menu -->
     <section id="menu" class="section-menu">
@@ -26,11 +54,11 @@
                 <div class="col-md-10">
                     <nav >
                         <ul class="nav-parent">
-                            <li class="nav-child"> <a class="action" href="Trangchu">Trang chủ</a></li>
-                            <li class="nav-child"> <a href="Gioithieu">Giới thiệu</a></li>
-                            <li class="nav-child"> <a href="Sanpham">Sản phẩm</a></li>
-                            <li class="nav-child"> <a href="Tintuc">Tin tức</a></li>
-                            <li class="nav-child"> <a href="Lienhe">Liên hệ</a></li>
+                            <li class="nav-child"> <a class="action" href="trang-chu.html">Trang chủ</a></li>
+                            <li class="nav-child"> <a href="gioi-thieu.html">Giới thiệu</a></li>
+                            <li class="nav-child"> <a href="san-pham.html">Sản phẩm</a></li>
+                            <li class="nav-child"> <a href="tin-tuc.html">Tin tức</a></li>
+                            <li class="nav-child"> <a href="lien-he.html">Liên hệ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -76,6 +104,7 @@
         <div class="product-header common-header text-center">
             <h1>SẢN PHẨM NỔI BẬT</h1>
         </div>
+        
         <section class="regular slider lst-product">
             <div class="box text-center">
                 <div class="box-img-product">
@@ -282,7 +311,20 @@
     <script src="./common/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <!-- link nhúng slick -->
-    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script src="./js/csript.js "></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/script.js "></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+         
+          $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4
+          });
+          
+        });
+    </script>
 </body>
 </html>

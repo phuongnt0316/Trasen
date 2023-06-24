@@ -21,6 +21,23 @@
     margin: 0;
     font-family: font-svn;
 }
+#product  .slick-slide {
+    margin: 0px 10px;
+  }
+
+  #product .slick-slide img {
+
+    border-radius: 50%;
+    width: 80%;
+  }
+  #product .slick-prev:before,
+  #product .slick-next:before {
+    color: #aabc44;
+  }
+  #product .slick-slide {
+    transition: all ease-in-out .3s;
+    /* opacity: .2; */
+  }
 .section-menu{
     
     width: 1280px;
@@ -106,31 +123,7 @@ img{
 }
 /* slick */
 
-.slider {
-    /* width: 50%; */
-    width: 1280px;
-    margin: 45px 100px 0 100px;
-}
 
-.slick-slide {
-  margin: 0px 30px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    font-size: 25px;
-  color:#bd945f;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  /* opacity: .2; */
-}
 #banner-2 .box-content-content{
     width: 540px;
     text-align: justify;
@@ -313,4 +306,13 @@ section .find{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+/* chi tiet san pham */
+
+.list-img img{
+    width: 150px;
+    height: 150px;
+}
+.intro-product .content-2{
+    text-align: justify;
 }
